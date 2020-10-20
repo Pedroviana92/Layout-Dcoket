@@ -1,0 +1,29 @@
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+.container {
+    display: flex;
+}
+
+.form-cadastro {
+    width: 40vw;
+}
+.campo-obrigatorio {
+    display: flex;
+}
+.form-ficha {
+    border: solid 1px black;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#carouselExampleControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
