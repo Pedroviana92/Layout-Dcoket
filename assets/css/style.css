@@ -2,11 +2,15 @@ h1 {
     font-size: 30px;
 }
 h2 {
-    font-size: 20px;
+    font-size: 30px;
+}
+h3 {
+    font-size: 15px;
 }
 header {
     height: 30vh;
     background-image: linear-gradient( to right, rgb(97, 97, 223), rgb(51, 51, 114), rgb(30, 30, 66), rgb(11, 11, 26) );
+    
 }
 header img {
     width: 100px;
@@ -35,12 +39,17 @@ body {
 .campo-obrigatorio {
     display: flex;
 }
-.btn {
+.botao {
     border-radius: 20px;
     width: 80px;
+    background-color: rgb(37, 37, 160);
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px black;
 }
 .form-ficha {
     border: solid 1px rgb(177, 169, 169);
+    border-top: solid 12px rgb(202, 198, 198);
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -50,6 +59,7 @@ body {
     padding: 20px;
     position: relative;
     bottom: 40px;
+    background-color: rgb(230, 230, 240);
 }
 #carouselExampleControls {
     display: flex;
@@ -57,7 +67,7 @@ body {
     align-items: center;
 }
 footer {
-    height: 10vh;
+    height: 18vh;
     background-image: linear-gradient( to right, rgb(97, 97, 223), rgb(51, 51, 114), rgb(30, 30, 66), rgb(11, 11, 26) );
     display: flex;
     flex-direction: column;
@@ -67,4 +77,67 @@ footer {
 footer p {
     color: white;
     
+}
+.mensagem-sucesso {
+    position: relative;
+    left: 430px;
+    top: 20px;
+    border: solid 1px green;
+    padding: 20px;
+    border-radius: 30px;
+    background-color:rgb(127, 212, 127);
+    color: green;
+}
+.mensagem-erro {
+    position: relative;
+    left: 430px;
+    top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border: solid 1px red;
+    background-color: rgb(206, 86, 86);
+}
+.imagem-verificado {
+    width: 20px;
+    height: 20px;
+}
+.nao-informado {
+    color: grey;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .form-cadastro {
+        width: 80%;
+    }
+    .form-ficha {
+        width: 80%;
+        position: relative;
+        right: 10px;
+    }
+    header img {
+       width: 80px;
+       height: 80px;
+       left: 15px;
+    }
+    .mensagem-sucesso {
+        position: relative;
+        left: 20px;
+        bottom: 10px;
+        width: 100px;
+        padding: 10px;
+    }
+    .mensagem-erro {
+        position: relative;
+        left: 20px;
+        bottom: 10px;
+        width: 100px;
+        padding: 1px;
+
+    }
 }
